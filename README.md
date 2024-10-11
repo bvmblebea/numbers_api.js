@@ -1,10 +1,14 @@
-# numbers_api.py
+# numbers_api.js
 Web-API for [numbersapi.com](http://numbersapi.com) website which is an api to get interesting facts about numbers
 
 ## Example
-```python
-import numbers_api
-numbers_api = numbers_api.NumbersAPI()
-random_fact = numbers.api.get_random_fact(type="")
-print(random_fact)
+```JavaScript
+async function main() {
+	const { NumbersApi } = require("./numbers_api.js")
+	const numbersApi = new NumbersApi()
+	const randomFact = await numbersApi.getRandomFact("type")
+	console.log(randomFact)
+}
+
+main()
 ```
